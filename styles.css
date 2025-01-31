@@ -1,0 +1,97 @@
+
+/*Space here to make a custom variable*/ /**/
+
+#logo_pic {
+    /*Changes for the pic in header*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    /*Changes for the text in the header*/
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+p {
+    /*Changes for all p tags*/
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header > h1 {
+    font-size: 3em;
+}
+
+.heading_text {
+    /*Chagnes for head_text class*/
+    font-size: 2em;
+}
+
+#summon_text {
+    /*Changes for "summon" link*/
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p#summon_text a {
+    /*Changes to "summon" link*/
+    color:rgb(255, 0, 0);
+}
+
+p#summon_text a:hover {
+    /*Changes to "summon" link hover effect*/
+    font-size: 2em;
+    color: rgb(0, 107, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1.overview_text {
+    /*Changes to Game Overview text*/
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.section_heading_text {
+    /*Changes for the heading text for each section in the main tag*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section_heading_text::first-letter {
+    /*Changes for the FIRST LETTER of heading text for each section in the main tag*/
+    font-size: 1.5em;
+}
+
+p.list_heading {
+    /*Changes for List heading text*/
+    text-indent: 1em;
+}
+
+ul, ol li {
+    /*Changes for the text of both types of lists*/
+    font-size:  1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.important_text {
+    /*MARQEE TEXT*/
+    color: rgb(255, 0, 0);
+    float: inline-start;
+    margin-right: 2em;
+}
+
+.important_text_1 {
+    /*MARQEE TEXT*/
+    color: rgb(0, 255, 0);
+    float: inline-start;
+    margin-right: 2em;
+}
+
+.important_text_2 {
+    /*MARQEE TEXT*/
+    color: rgb(0, 0, 255);
+    float: inline-start;
+    margin-right: 2em;
+}

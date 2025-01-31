@@ -6,27 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Seven Knights Idle Adventure is a idle RPG that features PVP battles of up to 10 characters! It is a stage based game with PVE bosses, dungeons, and more!">
+    <link rel="stylesheet" href="styles.css">
     <title>Seven Knights</title>
 </head>
 
 <body>
     <header> <!--Contains a breif intro to the game and the download link-->
-        <img src="images/Seven_Knights_Logo.jpg" alt="Picture of the games heroes with the Seven Knights Idle Adventure logo"
-            width="500px">
+        <img id="logo_pic" src="images/Seven_Knights_Logo.jpg" alt="Picture of the games heroes with the Seven Knights Idle Adventure logo"
+            width="850px">
         <h1>Seven Knights Idle Adventure</h1>
-        <h2>Summon knights to form a team of 10 or more heroes to conquer the stages!</h2>
-        <h3>Click "<em>Summon</em>" to download the game &rarr; <a
-                href="https://skidle.netmarble.com/en">&Sscr;&uscr;&mscr;&mscr;&oscr;&nscr;</a></h3>
-        <p><strong>Want to learn more? Keep reading!</strong></p>
+        <h2 class="heading_text">Summon heroes to form a team of 10 or more to conquer the stages!</h2>
+        <h2 class="heading_text">Click "<em>Summon</em>" to download the game</h2>
+        <p id="summon_text"><a href="https://skidle.netmarble.com/en">Summon</a></p>
+        <!--Old Summon Text
+        &Sscr;&uscr;&mscr;&mscr;&oscr;&nscr;<-->
+        <p class="heading_text"><strong>Want to learn more? Keep reading!</strong></p>
+        <br>
         <br>
     </header>
 
     <main>
-        <h1>Game overview:</h1>
+        <h1 class="overview_text">&darr;Game overview&darr;</h1>
         <section> <!--This Section is about how to play the game-->
+            <h2 class="section_heading_text">How to play the game:</h2>
             <p>The <em>idle</em> portion of the game is <strong>stage</strong> based. Here players gain resources to level up their heroes to be able to fight the stage bosses. The higher a player goes in the stages, the harder the stages get!</p>
             <!--Add image of idle screen later-->
-            <p>Here's a <strong>recommended</strong> way to play the game:</p>
+            <p class="list_heading">Here's a <strong>recommended</strong> way to play the game:</p>
             <ol>
                 <li>Fight through the stages</li>
                 <li>Level up heroes</li>
@@ -34,17 +39,21 @@
                 <li>Repeat</li>
             </ol>
             <p>If you are <strong>unable</strong> to beat the boss let the game idle for a while so you can accumulate resources to level up your heroes to be strong enough to beat the boss. Then start repeating the listed process again.</p>
+            <br>
+            <br>
         </section>
+
         <section> <!--This Section is about the PVP and PVE aspects-->
+            <h2 class="section_heading_text">PVP and PVE Aspects:</h2>
             <p>The game also features both <abbr title="Player Versus Player"><strong>PVP</strong></abbr> and <abbr title="Player Versus Everything"><strong>PVE</strong></abbr> aspects that help you gain more resources to level up your heroes.</p>
-            <p>PVP Aspects:</p>
+            <p class="list_heading">PVP Aspects:</p>
             <ul>
                 <li>Guilds</li>
                 <li>Arena</li>
                 <li>Elite Arena</li>
             </ul>
             <!--Add image of PVP aspects later-->
-            <p>PVE Aspects:</p>
+            <p class="list_heading">PVE Aspects:</p>
             <ul>
                 <li>Daily Dungeons</li>
                 <li>Special Dungeons</li>
@@ -53,11 +62,15 @@
             <!--Add image of PVE aspects later-->
             <p>Additionally, there is <strong>event</strong> content that can be either PVP or PVE. Events are only available for a <strong>limited time</strong>. So be sure to complete them while they are available. The events are another way of gaining resources to increase the levels of heroes.</p>
             <!--Add image of example event later-->
+            <br>
+            <br>
         </section>
+
         <section> <!--This Section is about the Hero Summons-->
+            <h2 class="section_heading_text">About the Heros:</h2>
             <p>To gain more heroes you have to <strong>summon</strong> them. Heroes are summoned using either <strong>summoning tickets</strong> or <strong>gems</strong>. Summoned heroes come in different <strong>rarities</strong>! The higher the rarity the stronger the hero!</p>
             <!--Add image of hero summoning screen later-->
-            <p>Hero rarities listed from <strong>strongest</strong> to <em>weakest</em>:</p>
+            <p class="list_heading">Hero rarities listed from <strong>strongest</strong> to <em>weakest</em>:</p>
             <ul>
                 <li>High Lord</li>
                 <li>Legendary</li>
@@ -70,12 +83,23 @@
             <!--Add image of rarities later-->
             <p>The heroes are split into collections that are part of a codex. In the codex, as hero collections are completed stat increases are gained. Stat increases gained from the codex are applied universally. This means that it is applied to a player's team as a whole regardless of what heroes are in the team.</p>
             <!--Add image of hero codex screen later-->
-            <p><strong>!!!IMPORTANT!!!</strong></p>
+            <marquee>
+                <p class="important_text"><strong>!!!IMPORTANT!!!</strong></p> 
+                <p class="important_text_1"><strong>!!!IMPORTANT!!!</strong></p>
+                <p class="important_text_2"><strong>!!!IMPORTANT!!!</strong></p>
+                <p class="important_text"><strong>!!!IMPORTANT!!!</strong></p> 
+                <p class="important_text_1"><strong>!!!IMPORTANT!!!</strong></p>
+                <p class="important_text_2"><strong>!!!IMPORTANT!!!</strong></p>
+            </marquee>
             <p>Yes, players can spend <em>real money</em> on the game in the shop to speed up their leveling process. <strong>However</strong>, the game is <strong>very generous</strong> in that if players are actively playing and participating in events, spending real money is not needed. The game gives out a lot of its in-game currencies as players progress through the game. <strong>JUST KEEP PLAYING!</strong></p>
+            <br>
+            <br>
         </section>
-        <section> <!--This Section is about leveling up heroes-->
+
+        <section> <!--This Section is about strengthening your heroes-->
+            <h2 class="section_heading_text">About Hero Stats:</h2>
             <p>There are many other ways to increase the <strong>strength</strong> of the heroes.</p>
-            <p>Here is a list of ways to increase a hero's strength and the resources needed:</p>
+            <p class="list_heading">Here is a list of ways to increase a hero's strength and the resources needed:</p>
             <ul>
                 <li>Hero's Level - <small>Uses Hero EXPs</small></li>
                 <li>Hero's Breakthrough - <small>Uses Hero Strengthening Stones</small></li>
@@ -89,10 +113,16 @@
                 <li>Hero's Costume - <small>Costume Tickets</small></li>
             </ul>
             <!--Add image of hero leveling screen later-->
+            <br>
+            <br>
         </section>
+
         <section> <!--This Section is about pets-->
+            <h2 class="section_heading_text">About Pet:</h2>
             <p>The game also features <strong>pets</strong>. Pets are summoned and leveled up in a similar way to the heroes are. Additionally, pets have similar rarities except for <em>"High Lord"</em>. The main purpose of pets is to increase stats. The stat increases get better as the pet's level increases. Also, just like with the codex, the stat increases from pets are applied universally regardless of which pet is being used.</p>
             <!--Add image of pet screen later-->
+            <br>
+            <br>
         </section>
     </main>
 
