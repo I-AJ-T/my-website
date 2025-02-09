@@ -1,28 +1,75 @@
 
 /*Space here to make a custom variable*/ /**/
+/*Date Last Modified: 2/9/2025*/
 
-#logo_pic {
-    /*Changes for the pic in header*/
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+/*Global Changes*/
+body {
+    /*Changes to the body tag*/
+    background: url(images/background/tile.png);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3;
 }
 
 header {
     /*Changes for the text in the header*/
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+}
+
+main {
+    /*Changes to the main section of the body
+    background: #ffffff;*/
+    background: linear-gradient(135deg, #868686 0%, #ffffff 50%, #868686 100%);
+    margin: 60px 200px 60px 200px;
+    padding: 50px;
+    border: 20px inset #000000;
 }
 
 p {
     /*Changes for all p tags*/
-    font-size: 1.3em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
 }
 
-header > h1 {
-    font-size: 3em;
+
+article {
+    column-count: 2; 
+    column-gap: 100px;
+    column-rule: 6px dotted rgb(0, 0, 0);
 }
+
+footer {
+    /*Changes to the footer*/
+    margin: 40px 20px 40px 20px;
+}
+/*End of global Changes*/
+
+
+/*Picture Changes*/
+#logo_pic {
+    /*Changes for the pic in the header*/
+    width: 1000px;
+    display: block;
+    margin-top: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 20px ridge rgb(0, 0, 0);
+}
+/*End of picture Changes*/
+
+
+/*Changes to the header section of html pages*/
+#heading_text_box {
+    /*Changes to the box around the header text*/
+    background: linear-gradient(180deg, #0066ff 0%, #ffffff 50%, #226b00 100%);
+    border: 20px outset #000000;
+    margin: 55px 400px 40px 400px;
+}
+
+#heading_text_box > h1 {
+    /*Changes to the h1 in the header*/
+    font-size: 5em;
+}
+
+/*The following changes in the header section only apply to the index.html page*/
 
 .heading_text {
     /*Chagnes for head_text class*/
@@ -32,7 +79,6 @@ header > h1 {
 #summon_text {
     /*Changes for "summon" link*/
     font-size: 3em;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 p#summon_text a {
@@ -46,35 +92,49 @@ p#summon_text a:hover {
     color: rgb(0, 107, 0);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+/*End of the changes to the header section of html pages*/
 
+
+/*Changes to any section's heading text*/
 h1.overview_text {
     /*Changes to Game Overview text*/
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4em;
     text-align: center;
 }
 
 .section_heading_text {
-    /*Changes for the heading text for each section in the main tag*/
-    font-family: Arial, Helvetica, sans-serif;
+    font-size:2em;
 }
 
 .section_heading_text::first-letter {
     /*Changes for the FIRST LETTER of heading text for each section in the main tag*/
     font-size: 1.5em;
 }
+/*End of the changes to any section heading text*/
 
+
+/*Changes to the list on any page*/
 p.list_heading {
     /*Changes for List heading text*/
     text-indent: 1em;
+    font-weight: bold;
+}
+
+p.list_heading::first-letter {
+    /*Changes for List heading text's first letter*/
+    font-size: 1.5em;
 }
 
 ul, ol li {
     /*Changes for the text of both types of lists*/
-    font-size:  1.3em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size:  1.5em;
     font-style: italic;
+    margin-left: 40px;
 }
+/*End of changes to the list on any page*/
 
+
+/*"IMPORTANT" MARQEE TEXT*/
 .important_text {
     /*MARQEE TEXT*/
     color: rgb(255, 0, 0);
@@ -95,3 +155,4 @@ ul, ol li {
     float: inline-start;
     margin-right: 2em;
 }
+/*End of "IMPORTANT" MARQEE TEXT*/
