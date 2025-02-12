@@ -1,17 +1,37 @@
 
 /*Space here to make a custom variable*/ /**/
-/*Date Last Modified: 2/9/2025*/
 
-/*Global Changes*/
+/*
+=====================================================
+|                   Template                        |
+=====================================================
+*/
+
+/*============  End of Template  ============*/
+
+/*Date Last Modified: 2/12/2025*/
+
+/*
+=====================================================
+|                  Global Changes                   |
+=====================================================
+*/
+
 body {
     /*Changes to the body tag*/
     background: url(images/background/tile.png);
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.3;
+    margin: 0px;
 }
 
 header {
     /*Changes for the text in the header*/
+    background: url(images/index_header/Seven_Knights_Logo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: top;
+    background-size: 100%;
     text-align: center;
 }
 
@@ -40,10 +60,24 @@ footer {
     /*Changes to the footer*/
     margin: 40px 20px 40px 20px;
 }
-/*End of global Changes*/
+/*============    End of global Changes   ============*/
+
+/*
+=====================================================
+|               Navigation Bar Changes              |
+=====================================================
+*/
 
 
-/*Picture Changes*/
+
+/*============  End of Navigation Bar Changes  ============*/
+
+/*
+=====================================================
+|                   Picture Changes                 |
+=====================================================
+*/
+
 #logo_pic {
     /*Changes for the pic in the header*/
     width: 1000px;
@@ -53,49 +87,55 @@ footer {
     margin-right: auto;
     border: 20px ridge rgb(0, 0, 0);
 }
-/*End of picture Changes*/
+/*============  End of picture Changes  ============*/
 
 
-/*Changes to the header section of html pages*/
+/*
+=====================================================
+|   Changes to the header section of html pages     |
+=====================================================
+*/
+
 #heading_text_box {
     /*Changes to the box around the header text*/
-    background: linear-gradient(180deg, #0066ff 0%, #ffffff 50%, #226b00 100%);
-    border: 20px outset #000000;
-    margin: 55px 400px 40px 400px;
+    margin: 0px 100px 0px 100px;
 }
 
 #heading_text_box > h1 {
     /*Changes to the h1 in the header*/
     font-size: 5em;
+    -webkit-text-stroke: 3px #000000;
+    color: white;
+    margin-top: 0;
+}
+
+h2.heading_text {
+    margin: 0;
+}
+
+p.heading_text {
+    margin: 20px 0px 0px 0px;
+    padding-bottom: 20px;
 }
 
 /*The following changes in the header section only apply to the index.html page*/
 
 .heading_text {
     /*Chagnes for head_text class*/
-    font-size: 2em;
-}
-
-#summon_text {
-    /*Changes for "summon" link*/
     font-size: 3em;
+    -webkit-text-stroke: 2.5px #000000;
+    color: white;
+    margin-bottom: 0;
 }
-
-p#summon_text a {
-    /*Changes to "summon" link*/
-    color:rgb(255, 0, 0);
-}
-
-p#summon_text a:hover {
-    /*Changes to "summon" link hover effect*/
-    font-size: 2em;
-    color: rgb(0, 107, 0);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-/*End of the changes to the header section of html pages*/
+/*============  End of the changes to the header section of html pages  ============*/
 
 
-/*Changes to any section's heading text*/
+/*
+=====================================================
+|       Changes to any section's heading text       |
+=====================================================
+*/
+
 h1.overview_text {
     /*Changes to Game Overview text*/
     font-size: 4em;
@@ -110,10 +150,52 @@ h1.overview_text {
     /*Changes for the FIRST LETTER of heading text for each section in the main tag*/
     font-size: 1.5em;
 }
-/*End of the changes to any section heading text*/
+/*============  End of the changes to any section heading text  ============*/
+
+/*
+=====================================================
+|                   Download Text Box Changes       |
+=====================================================
+*/
+
+#download_text_box {
+    text-align: center;
+    margin: 20px 100px 20px 100px;
+}
+
+#download_text {
+    font-size: 3em;
+    -webkit-text-stroke: 2.5px #000000;
+    color: white;
+    margin-bottom: 0;
+}
+
+#summon_text {
+    /*Changes for "summon" link*/
+    font-size: 3em;
+    margin: 0;
+}
+
+p#summon_text a {
+    /*Changes to "summon" link*/
+    color:rgb(255, 0, 0);
+}
+
+p#summon_text a:hover {
+    /*Changes to "summon" link hover effect*/
+    font-size: 2em;
+    color: rgb(0, 107, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/*============  End of changes to download text box  ============*/
 
 
-/*Changes to the list on any page*/
+/*
+=====================================================
+|           Changes to the list on any page         |
+=====================================================
+*/
+
 p.list_heading {
     /*Changes for List heading text*/
     text-indent: 1em;
@@ -131,28 +213,39 @@ ul, ol li {
     font-style: italic;
     margin-left: 40px;
 }
-/*End of changes to the list on any page*/
+/*============  End of changes to the list on any page  ============*/
 
 
-/*"IMPORTANT" MARQEE TEXT*/
+/*
+=====================================================
+|               "IMPORTANT" MARQEE TEXT             |
+=====================================================
+*/
+
 .important_text {
     /*MARQEE TEXT*/
-    color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
     float: inline-start;
     margin-right: 2em;
 }
 
-.important_text_1 {
-    /*MARQEE TEXT*/
-    color: rgb(0, 255, 0);
-    float: inline-start;
-    margin-right: 2em;
+/*============  End of "IMPORTANT" MARQEE TEXT  ============*/
+
+/*
+=====================================================
+|                   Media Queries                   |
+=====================================================
+*/
+@media only screen and (max-width: 1215px) {
+   h2.heading_text {
+    display: none;
+   }
 }
 
-.important_text_2 {
-    /*MARQEE TEXT*/
-    color: rgb(0, 0, 255);
-    float: inline-start;
-    margin-right: 2em;
+@media only screen and (max-width: 800px) {
+    p.heading_text {
+     display: none;
+    }
+
 }
-/*End of "IMPORTANT" MARQEE TEXT*/
+/*============  End of Media Queries  ============*/
