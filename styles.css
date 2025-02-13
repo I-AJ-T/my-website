@@ -39,7 +39,7 @@ main {
     /*Changes to the main section of the body
     background: #ffffff;*/
     background: linear-gradient(135deg, #868686 0%, #ffffff 50%, #868686 100%);
-    margin: 60px 200px 60px 200px;
+    margin: 2% 4% 2% 4%;
     padding: 50px;
     border: 20px inset #000000;
 }
@@ -68,7 +68,50 @@ footer {
 =====================================================
 */
 
+#nav_menu {
+    padding-bottom: 4em;
+    margin: auto;
+    width: 100%;
+}
 
+#nav_menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav_menu ul li {
+    float: left;
+    width: 25%;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    padding:1em 0;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: bold;
+    border-right: 2px solid white;
+}
+
+#nav_menu ul li a.current {
+    color: #ffd900;
+}
+
+#nav_menu ul li a:hover {
+    background-color: #ffd900;
+    color: #000000;
+}
+
+#nav_menu ul li a.lastitem {
+    border-right: none;
+}
+
+#nav_menu ul li a#lastitem {
+    border-right: none;
+}
 
 /*============  End of Navigation Bar Changes  ============*/
 
@@ -78,15 +121,7 @@ footer {
 =====================================================
 */
 
-#logo_pic {
-    /*Changes for the pic in the header*/
-    width: 1000px;
-    display: block;
-    margin-top: 55px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 20px ridge rgb(0, 0, 0);
-}
+
 /*============  End of picture Changes  ============*/
 
 
@@ -96,17 +131,12 @@ footer {
 =====================================================
 */
 
-#heading_text_box {
-    /*Changes to the box around the header text*/
-    margin: 0px 100px 0px 100px;
-}
-
 #heading_text_box > h1 {
     /*Changes to the h1 in the header*/
     font-size: 5em;
     -webkit-text-stroke: 3px #000000;
     color: white;
-    margin-top: 0;
+    margin: 0;
 }
 
 h2.heading_text {
@@ -154,38 +184,44 @@ h1.overview_text {
 
 /*
 =====================================================
-|                   Download Text Box Changes       |
+|             Download Text Box Changes             |
 =====================================================
 */
 
 #download_text_box {
     text-align: center;
-    margin: 20px 100px 20px 100px;
+    margin: 20px 0px 20px 0px;
 }
 
 #download_text {
     font-size: 3em;
     -webkit-text-stroke: 2.5px #000000;
-    color: white;
-    margin-bottom: 0;
+    color: #ffffff;
+    margin: 40px 0px 0px 0px;
+    background-color: #ffffff;
 }
 
 #summon_text {
     /*Changes for "summon" link*/
     font-size: 3em;
-    margin: 0;
 }
 
 p#summon_text a {
     /*Changes to "summon" link*/
-    color:rgb(255, 0, 0);
+    text-align: center;
+    color:#000000;
+    background-color: #ffd700;
+    padding: 10px;
+    border: 10px ridge black;
 }
 
 p#summon_text a:hover {
     /*Changes to "summon" link hover effect*/
     font-size: 2em;
-    color: rgb(0, 107, 0);
+    color: #ffd700;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #000000;
+    border: 10px ridge #ffd700;
 }
 /*============  End of changes to download text box  ============*/
 
@@ -236,15 +272,31 @@ ul, ol li {
 |                   Media Queries                   |
 =====================================================
 */
+
 @media only screen and (max-width: 1215px) {
    h2.heading_text {
     display: none;
    }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 814px) {
     p.heading_text {
      display: none;
+    }
+
+}
+
+@media only screen and (max-width: 925px) {
+    h1.overview_text {
+        /*Changes to Game Overview text*/
+        font-size: 2em;
+    }
+
+}
+
+@media only screen and (max-width: 920px) {
+    h1.overview_text {
+        /*For changes to the nav*/
     }
 
 }
