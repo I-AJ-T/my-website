@@ -6,19 +6,17 @@
 |                   Template                        |
 =====================================================
 */
-
 /*============  End of Template  ============*/
 
-/*Date Last Modified: 2/12/2025*/
+/*Date Last Modified: 2/16/2025*/
+/*Author: Aj Sison*/
 
 /*
 =====================================================
 |                  Global Changes                   |
 =====================================================
 */
-
 body {
-    /*Changes to the body tag*/
     background: url(images/background/tile.png);
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.3;
@@ -26,8 +24,7 @@ body {
 }
 
 header {
-    /*Changes for the text in the header*/
-    background: url(images/index_header/Seven_Knights_Logo.jpg);
+    background: url(images/background/seven_knights_logo.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-position: top;
@@ -36,19 +33,15 @@ header {
 }
 
 main {
-    /*Changes to the main section of the body
-    background: #ffffff;*/
     background: linear-gradient(135deg, #868686 0%, #ffffff 50%, #868686 100%);
-    margin: 2% 4% 2% 4%;
-    padding: 50px;
+    margin: 4em 4% 2% 4%;
+    padding: 3%;
     border: 20px inset #000000;
 }
 
 p {
-    /*Changes for all p tags*/
     font-size: 1.5em;
 }
-
 
 article {
     column-count: 2; 
@@ -57,20 +50,17 @@ article {
 }
 
 footer {
-    /*Changes to the footer*/
     margin: 40px 20px 40px 20px;
 }
 /*============    End of global Changes   ============*/
-
 /*
 =====================================================
 |               Navigation Bar Changes              |
 =====================================================
 */
-
 #nav_menu {
-    padding-bottom: 4em;
-    margin: auto;
+    padding-bottom: 5em;
+    margin-bottom: auto;
     width: 100%;
 }
 
@@ -81,6 +71,7 @@ footer {
 }
 
 #nav_menu ul li {
+    font-size: 1.8em;
     float: left;
     width: 25%;
 }
@@ -88,12 +79,12 @@ footer {
 #nav_menu ul li a {
     text-align: center;
     display: block;
-    padding:1em 0;
+    padding: 1em 0;
     text-decoration: none;
     background-color: rgb(0, 0, 0);
-    color: white;
+    color: #ffffff;
     font-weight: bold;
-    border-right: 2px solid white;
+    border-right: 2px solid #ffffff;
 }
 
 #nav_menu ul li a.current {
@@ -112,28 +103,13 @@ footer {
 #nav_menu ul li a#lastitem {
     border-right: none;
 }
-
 /*============  End of Navigation Bar Changes  ============*/
-
 /*
 =====================================================
-|                   Picture Changes                 |
+|           Changes to the header section           |
 =====================================================
 */
-
-
-
-/*============  End of picture Changes  ============*/
-
-
-/*
-=====================================================
-|   Changes to the header section of html pages     |
-=====================================================
-*/
-
 #heading_text_box > h1 {
-    /*Changes to the h1 in the header*/
     font-size: 5em;
     -webkit-text-stroke: 3px #000000;
     color: white;
@@ -145,32 +121,28 @@ h2.heading_text {
 }
 
 p.heading_text {
-    margin: 20px 0px 0px 0px;
+    margin: 10px 0px 0px 0px;
     padding-bottom: 20px;
 }
 
 /*The following changes in the header section only apply to the index.html page*/
 
 .heading_text {
-    /*Chagnes for head_text class*/
     font-size: 3em;
     -webkit-text-stroke: 2.5px #000000;
     color: white;
     margin-bottom: 0;
 }
 /*============  End of the changes to the header section of html pages  ============*/
-
-
 /*
 =====================================================
 |       Changes to any section's heading text       |
 =====================================================
 */
-
 h1.overview_text {
-    /*Changes to Game Overview text*/
     font-size: 4em;
     text-align: center;
+    margin-top: auto;
 }
 
 .section_heading_text {
@@ -178,37 +150,35 @@ h1.overview_text {
 }
 
 .section_heading_text::first-letter {
-    /*Changes for the FIRST LETTER of heading text for each section in the main tag*/
     font-size: 1.5em;
 }
 /*============  End of the changes to any section heading text  ============*/
-
 /*
 =====================================================
 |             Download Text Box Changes             |
 =====================================================
 */
-
 #download_text_box {
     text-align: center;
-    margin: 20px 0px 20px 0px;
+    margin: 0;
 }
 
 #download_text {
     font-size: 3em;
     -webkit-text-stroke: 2.5px #000000;
     color: #ffffff;
-    margin: 40px 0px 0px 0px;
     background-color: #ffffff;
+    border-top: 4px solid #000000;
+    border-bottom: 4px solid #000000;
+    margin: 0;
 }
 
+/*Following changes are for the download button*/
 #summon_text {
-    /*Changes for "summon" link*/
     font-size: 3em;
 }
 
 p#summon_text a {
-    /*Changes to "summon" link*/
     text-align: center;
     color:#000000;
     background-color: #ffd700;
@@ -217,7 +187,6 @@ p#summon_text a {
 }
 
 p#summon_text a:hover {
-    /*Changes to "summon" link hover effect*/
     font-size: 2em;
     color: #ffd700;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -225,8 +194,6 @@ p#summon_text a:hover {
     border: 10px ridge #ffd700;
 }
 /*============  End of changes to download text box  ============*/
-
-
 /*
 =====================================================
 |           Changes to the list on any page         |
@@ -234,71 +201,293 @@ p#summon_text a:hover {
 */
 
 p.list_heading {
-    /*Changes for List heading text*/
     text-indent: 1em;
     font-weight: bold;
 }
 
 p.list_heading::first-letter {
-    /*Changes for List heading text's first letter*/
     font-size: 1.5em;
 }
 
-ul, ol li {
-    /*Changes for the text of both types of lists*/
+ul.ul_section_list li {
     font-size:  1.5em;
     font-style: italic;
-    margin-left: 40px;
+    margin-left: 5%;
+}
+
+ol.ol_section_list li {
+    font-size:  1.5em;
+    font-style: italic;
+    margin-left: 5%;
 }
 /*============  End of changes to the list on any page  ============*/
-
-
 /*
 =====================================================
 |               "IMPORTANT" MARQEE TEXT             |
 =====================================================
 */
-
 .important_text {
-    /*MARQEE TEXT*/
     color: rgb(0, 0, 0);
-    float: inline-start;
-    margin-right: 2em;
 }
-
 /*============  End of "IMPORTANT" MARQEE TEXT  ============*/
-
+/*
+=====================================================
+|                   Picture Changes                 |
+=====================================================
+*/
+img#game_overview_gameplay {
+    width: 20%;
+    min-width: 71.969px;
+    float: left;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    border: 4px solid #000000;
+}
+#home_img_clear {
+    clear: left;
+}
+/*============  End of picture Changes  ============*/
+/*
+=====================================================
+|           Div Changes for Bottom Links            |
+=====================================================
+*/
+div.bottom_links {
+    padding-top: 2%;
+    font-size: 0.8em;
+}
+/*============  End of Div Changes for Bottom Links  ============*/
 /*
 =====================================================
 |                   Media Queries                   |
 =====================================================
 */
 
-@media only screen and (max-width: 1215px) {
-   h2.heading_text {
-    display: none;
-   }
-}
-
-@media only screen and (max-width: 814px) {
-    p.heading_text {
-     display: none;
+@media only screen and (max-width: 1480px) {
+    /*This clears the text of the list on the home page*/
+    #home_list_img_clear {
+        clear: left;
     }
-
 }
 
-@media only screen and (max-width: 925px) {
+@media only screen and (max-width: 1200px) {
+    /*Makes text in the header smaller*/
+    #heading_text_box > h1 {
+        font-size: 3.5em;
+        -webkit-text-stroke: 2px #000000;
+    }
+    h2.heading_text {
+        font-size: 2em;
+        -webkit-text-stroke: 2px #000000;
+    }
+    p.heading_text {
+        font-size: 2em;
+        -webkit-text-stroke: 2px #000000;
+    }
+}
+
+@media only screen and (max-width: 1075px) {
+    /*This clears the note text on the home page*/
+    #note_img_clear {
+        clear: left;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    /*Changes for Navigation Menu*/
+    #nav_menu {
+        padding-bottom: 2em;
+    }
+    #nav_menu ul li a {
+        font-size: 0.8em;
+        padding: 0.8em 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    /*Makes text under main header in the header disappear*/
+    h2.heading_text {
+        display: none;
+    }
+    p.heading_text {
+        display: none;
+    }
+    /*Change to the Nav Menu Text*/
+    #nav_menu ul li {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    /*Global changes*/
+    main {
+        border: 15px inset #000000;
+    }
+    p {
+        font-size: 1.2em;
+    }
+    /*Changes to Overview text and all text below it*/
     h1.overview_text {
-        /*Changes to Game Overview text*/
+        font-size: 3em;
+    }
+    .section_heading_text {
+        font-size: 1.7em;
+    }
+    .section_heading_text::first-letter {
+        font-size: 1.4em;
+    }
+    p.list_heading {
+        text-indent: 0.8em;
+    }
+    p.list_heading::first-letter {
+        font-size: 1.4em;
+    }
+    ul.ul_section_list li {
+        font-size: 1.2em;
+    }
+    ol.ol_section_list li {
+        font-size: 1.2em;
+    }
+    /*Following changes are for the download text and button*/
+    #download_text {
+        font-size: 1.8em;
+        -webkit-text-stroke: 1.5px #000000;
+        border-top: 3px solid #000000;
+        border-bottom: 3px solid #000000;
+    }
+    #summon_text {
         font-size: 2em;
     }
-
+    p#summon_text a {
+        border: 6px ridge black;
+    }
+    p#summon_text a:hover {
+        font-size: 1.8em;
+        border: 6px ridge #ffd700;
+    }
 }
 
-@media only screen and (max-width: 920px) {
-    h1.overview_text {
-        /*For changes to the nav*/
+@media only screen and (max-width: 660px) {
+    main {
+        margin-top: 2em;
     }
+    /*Change to the Nav Menu Text*/
+    #nav_menu ul li {
+        font-size: 1em;
+    }
+}
 
+@media only screen and (max-width: 625px) {
+    /*Global changes*/
+    main {
+        border: 10px inset #000000;
+    }
+    p {
+        font-size: 1em;
+    }
+     /*Changes to Overview text and all text below it*/
+    h1.overview_text {
+        font-size: 2em;
+    }
+    .section_heading_text {
+        font-size: 1.4em;
+    }
+    .section_heading_text::first-letter {
+        font-size: 1.2em;
+    }
+    p.list_heading {
+        text-indent: 0.8em;
+    }
+    p.list_heading::first-letter {
+        font-size: 1.2em;
+    }
+    ul.ul_section_list li {
+        font-size: 1em;
+    }
+    ol.ol_section_list li {
+        font-size: 1em;
+    }
+    /*Following changes are for the download text and button*/
+    #download_text {
+        font-size: 1.6em;
+        -webkit-text-stroke: 1.2px #000000;
+        border-top: 2px solid #000000;
+        border-bottom: 2px solid #000000;
+    }
+    #summon_text {
+        font-size: 1.8em;
+    }
+    p#summon_text a {
+        border: 4px ridge black;
+    }
+    p#summon_text a:hover {
+        font-size: 1.6em;
+        border: 4px ridge #ffd700;
+    }
+    /*Change to article*/
+    article {
+        column-count: 1; 
+    }
+    /*Changes to Nav Menu right borders*/
+    #nav_menu ul li a {
+        border-right: 1px solid #ffffff;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    /*Global changes*/
+    main {
+        border: 5px inset #000000;
+    }
+    p {
+        font-size: 0.8em;
+    }
+    #heading_text_box > h1 {
+        font-size: 2em;
+        -webkit-text-stroke: 1.3px #000000;
+    }
+    /*Changes to Overview text and all text below it*/
+    h1.overview_text {
+        font-size: 1.5em;
+    }
+    .section_heading_text {
+        font-size: 1.2em;
+    }
+    .section_heading_text::first-letter {
+        font-size: 1em;
+    }
+    p.list_heading {
+        text-indent: 0.6em;
+    }
+    p.list_heading::first-letter {
+        font-size: 1em;
+    }
+    ul.ul_section_list li {
+        font-size: 0.8em;
+    }
+    ol.ol_section_list li {
+        font-size: 0.8em;
+    }
+    /*Following changes are for the download text and button*/
+    #download_text {
+        font-size: 1.2em;
+        -webkit-text-stroke: 1px #000000;
+    }
+    #summon_text {
+        font-size: 1.6em;
+    }
+    p#summon_text a:hover {
+        font-size: 1.4em;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    /*Change to the Nav Menu Text*/
+    #nav_menu {
+        padding-bottom: 1em;
+    }
+    #nav_menu ul li {
+        font-size: 0.6em;
+    }
 }
 /*============  End of Media Queries  ============*/
